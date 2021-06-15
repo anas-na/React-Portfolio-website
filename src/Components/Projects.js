@@ -11,18 +11,19 @@ const Projects = () => {
         <Carousel
           fade
           interval={null}
-          className="carousel "
+          className="carousel col-md-10 col-sm-12"
           data-bs-touch="false"
         >
           <Carousel.Item>
             <div class="d-flex justify-content-center ">
               <img
-                className="d-block w-70"
+                className="d-block w-90"
                 src={SnowmanGame}
                 alt="First slide"
               />
-            </div>
-            <Carousel.Caption>
+          </div>
+  
+            <Carousel.Caption className="col-sm-4 col-md-12">
               <h3 class="text-danger">Snowman</h3>
               <p>
                 {" "}
@@ -31,6 +32,7 @@ const Projects = () => {
               </p>
             </Carousel.Caption>
           </Carousel.Item>
+
           <Carousel.Item>
             <div class="d-flex justify-content-center">
               <img
@@ -42,14 +44,14 @@ const Projects = () => {
             <Carousel.Caption>
               <h3>The HyruleText Adventure</h3>
               <p>
-                In The Hyrule Adventure Game -inspired by the popular game: The
-                Legend Of Zelda-, you play as the hero Link saving Princess
-                Zelda. by entering text or numbers to answer simple questions,
-                you're able to navigate through The Hyrule Castle to find Zelda.
-                Choose wisely to succesfully save the princess.
+              In The Hyrule Adventure Game -inspired by the popular game: The
+              Legend Of Zelda-, you play as the hero Link saving Princess
+              Zelda. by entering text or numbers to answer simple questions,
+              you're able to navigate through The Hyrule Castle to find Zelda.
+              Choose wisely to succesfully save the princess.
               </p>
-            </Carousel.Caption>
-            <button>click me</button>
+              <button class=' text-center' >Check out the code.</button>
+          </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <div class="d-flex justify-content-center">

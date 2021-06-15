@@ -3,10 +3,20 @@
     width: 50%
 }
 
-.projects {
+.carousel {
     width: 100%;
-    /* align-content: center; */
-    /* align-items: center; */
+    align-content: center;
+    align-items: center;
     background-color: gray;
 }
 
+.carousel-caption {
+    border: 1px solid black;
+    width: 75%;
+    padding: 10%;
+}
+
+.carousel-control-next-icon{
+    background-color: green !important;
+
+}
