@@ -8,6 +8,5 @@ this portfolio website was made using:
 -MDBootstrap
 -HTML
 -CSS
-
 ```
 
