@@ -1,3 +1,4 @@
+import React from 'react'
 import { Route, Switch } from "react-router";
 import Home from './Components/Home'
 import NavBar from './Components/NavBar'

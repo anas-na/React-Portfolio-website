@@ -1,10 +1,11 @@
 import React from "react";
+import logo from "../Images/logo.png"
 
 const AboutMe = () => {
   return (
     <div>
       <h2 id="title1">About Me:</h2>
-      <img src="logo.png" alt="selfpic" id="selfie" />
+      <img src={logo} alt="selfpic" id="selfie" />
       <p id="bio">
         Born and raised in Morocco, I moved to NYC in 2010 and been living in
         the big apple ever since. with a passion for music, I started learning
