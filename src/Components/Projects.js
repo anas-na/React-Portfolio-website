@@ -21,7 +21,7 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div className='projectsPage'>
+    <div className='projectsPage d-flex  flex-column justify-content-center'>
       <MDBRow className=' row-cols-1 row-cols-sm-2 row-cols-md-3 m-3'>
         <MDBCol>
           <MDBCard
@@ -46,8 +46,8 @@ const Projects = () => {
               </a>
             </MDBRipple>
             <MDBCardBody>
-              <MDBCardTitle>Snowman Game:</MDBCardTitle>
-              <MDBCardText>
+              <MDBCardTitle className='text-light'>Snowman Game:</MDBCardTitle>
+              <MDBCardText className='text-light'>
                 Inspired by a world famous game, as the player in The Snowman
                 Game, you get presented a word converted into "*****" and the
                 goal is to guess the word less than 7 tries or the snowman
@@ -56,6 +56,9 @@ const Projects = () => {
               </MDBCardText>
               <MDBCardFooter>
                 <MDBBtn
+                  color='BDBDBD'
+                  className='text-primary'
+                  className='text-primary'
                   href='https://github.com/itsanasna/FSW-CLI-Snowman'
                   target='_blank'
                 >
@@ -92,8 +95,10 @@ const Projects = () => {
               </a>
             </MDBRipple>
             <MDBCardBody>
-              <MDBCardTitle>The Hyrule Text Adventure</MDBCardTitle>
-              <MDBCardText>
+              <MDBCardTitle className='text-light'>
+                The Hyrule Text Adventure
+              </MDBCardTitle>
+              <MDBCardText className='text-light'>
                 In The Hyrule Adventure Game inspired by the popular game: The
                 Legend Of Zelda, you play as the hero Link saving PrincessZelda.
                 <br />
@@ -102,6 +107,9 @@ const Projects = () => {
               </MDBCardText>
               <MDBCardFooter>
                 <MDBBtn
+                  className='text-primary'
+                  color='BDBDBD'
+                  className='text-primary'
                   href='https://github.com/itsanasna/FSW-Text-Based-Adventure'
                   target='_blank'
                 >
@@ -131,8 +139,8 @@ const Projects = () => {
               </a>
             </MDBRipple>
             <MDBCardBody>
-              <MDBCardTitle>FauxTube:</MDBCardTitle>
-              <MDBCardText>
+              <MDBCardTitle className='text-light'>FauxTube:</MDBCardTitle>
+              <MDBCardText className='text-light'>
                 A web application clone of Youtube made by using React.js,
                 Bootstrap and API calls to show search results and play the
                 video chosen in a new page with the ability to leave comments.
@@ -149,6 +157,9 @@ const Projects = () => {
               </MDBCardText>
               <MDBCardFooter>
                 <MDBBtn
+                  color='BDBDBD'
+                  className='text-primary'
+                  className='text-primary'
                   href='https://github.com/itsanasna/FauxTube'
                   target='_blank'
                 >
@@ -185,8 +196,8 @@ const Projects = () => {
               </a>
             </MDBRipple>
             <MDBCardBody>
-              <MDBCardTitle>Pop Up Shop:</MDBCardTitle>
-              <MDBCardText>
+              <MDBCardTitle className='text-light'>Pop Up Shop:</MDBCardTitle>
+              <MDBCardText className='text-light'>
                 This app is an online PopUp shop where you can add any sneakers
                 you would like to sell but also not limited to those, as you can
                 add whatever items you would like to sell. <br />
@@ -196,12 +207,16 @@ const Projects = () => {
               <MDBCardFooter>
                 <MDBBtnGroup>
                   <MDBBtn
+                    color='BDBDBD'
+                    className='text-primary'
                     href='https://github.com/itsanasna/Pop-up-Shop-Back-end'
                     target='_blank'
                   >
                     BackEnd Code
                   </MDBBtn>
                   <MDBBtn
+                    color='BDBDBD'
+                    className='text-primary'
                     href='https://github.com/mphall77/Pop-Up-Front-End'
                     target='_blank'
                   >
@@ -237,8 +252,8 @@ const Projects = () => {
               </a>
             </MDBRipple>
             <MDBCardBody>
-              <MDBCardTitle>Budgeting app</MDBCardTitle>
-              <MDBCardText>
+              <MDBCardTitle className='text-light'>Budgeting app</MDBCardTitle>
+              <MDBCardText className='text-light'>
                 The Budgeting App helps you enter and save all transactions you
                 make into one place and add them together to show you how much
                 you are spending. you can create new entries, delete older ones
@@ -249,12 +264,16 @@ const Projects = () => {
               <MDBCardFooter>
                 <MDBBtnGroup>
                   <MDBBtn
+                    color='#BDBDBD'
+                    className='text-primary'
                     href='https://github.com/itsanasna/budgeting-app-backend'
                     target='_blank'
                   >
                     BackEnd Code
                   </MDBBtn>
                   <MDBBtn
+                    color='BDBDBD'
+                    className='text-primary'
                     href='https://github.com/itsanasna/Budgeting-React-front-end'
                     target='_blank'
                   >
@@ -271,3 +290,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
