@@ -21,7 +21,7 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <div className='projectsPage d-flex  flex-column justify-content-center'>
+    <div className='projectsPage d-flex  flex-column justify-content-center' id="projects">
       <MDBRow className=' row-cols-1 row-cols-sm-2 row-cols-md-3 m-3'>
         <MDBCol>
           <MDBCard
@@ -29,6 +29,7 @@ const Projects = () => {
             className='h-100 border border-dark'
             style={{ backgroundColor: "rgb(66, 66, 66)", maxWidth: "21rem" }}
           >
+            <div style={{height: "500px"}}>
             <MDBRipple
               rippleColor='light'
               rippleTag='div'
@@ -45,6 +46,7 @@ const Projects = () => {
                 ></div>
               </a>
             </MDBRipple>
+            </div>
             <MDBCardBody>
               <MDBCardTitle className='text-light'>Snowman Game:</MDBCardTitle>
               <MDBCardText className='text-light'>
@@ -170,7 +172,7 @@ const Projects = () => {
           </MDBCard>
         </MDBCol>
       </MDBRow>
-      <MDBRow className=' row-cols-1 row-cols-sm-2 row-cols-md-3 m-3'>
+      {/* <MDBRow className=' row-cols-1 row-cols-sm-2 row-cols-md-3 m-3'> */}
         <MDBCol>
           <MDBCard
             alignment='center'
@@ -242,7 +244,7 @@ const Projects = () => {
                 src={budgettingApp}
                 fluid
                 alt='Budgetting app'
-                style={{ maxWidth: "21rem", maxHeight: "300px" }}
+                style={{ maxWidth: "21rem", maxHeight: "100px" }}
               />
               <a href='https://budgetting-app.netlify.app' target='_blank'>
                 <div
@@ -284,7 +286,7 @@ const Projects = () => {
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
-      </MDBRow>
+      {/* </MDBRow> */}
     </div>
   );
 };
