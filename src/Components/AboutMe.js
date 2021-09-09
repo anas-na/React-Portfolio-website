@@ -15,15 +15,15 @@ import {
 } from "mdb-react-ui-kit";
 const AboutMe = () => {
   return (
-    <div>
+    <div id="aboutMe">
       <MDBCard alignment='center'
             className='h-100 border border-dark'
-            style={{ backgroundColor: "rgb(66, 66, 66)" }}>
+            style={{ backgroundColor: "rgb(66, 66, 66)", width: '100%' }}>
         <MDBRow className='g-0'>
           <MDBCol md='4'>
             <MDBCardImage src={logo} alt='selfpic' id='selfie' fluid />
           </MDBCol>
-          <MDBCol md='8'>
+          <MDBCol md='5'>
             <MDBCardBody className='d-flex flex-column justify-content-center'>
               <MDBCardTitle>About:</MDBCardTitle>
               <MDBCardText className="text-center">
