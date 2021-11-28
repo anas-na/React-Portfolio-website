@@ -1,0 +1,11 @@
+.skills {
+text-align: center;    
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+row-gap: 50px;
+}
+
+.skillsPage {
+    text-align: center;
+    margin-bottom: 50px;
+}

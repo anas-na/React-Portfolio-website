@@ -19,9 +19,11 @@ const Projects = () => {
               without having to worry about storage.
               <br /> App Made by a team of 4 developers
             </p>
-            <button href='https://ecorent.netlify.app' target='_blank'>
+            <a href='https://ecorent.netlify.app' target='_blank'>
+            <button class="btn btn-lg btn-outline-secondary">
               Live
             </button>
+            </a>
           </div>
       </div>
       <div className='container'>
@@ -33,9 +35,11 @@ const Projects = () => {
               chosen in a new page with the ability to leave comments.
               <br /> App Made by a team of 3 developers
             </p>
-            <button href='https://fauxtube.netlify.app' target='_blank'>
+            <a href='https://fauxtube.netlify.app' target='_blank'>
+            <button class="btn btn-lg btn-outline-secondary">
               Live
             </button>
+            </a>
         </div>
         <img src={FauxTube} alt='Example' className='image' />
 
@@ -52,24 +56,26 @@ const Projects = () => {
               <br />
               This App was created using React, Express, SQL, Bootstrap.
             </p>
-            <button href='https://budgetting-app.netlify.app' target='_blank'>
+            <a  href='https://budgetting-app.netlify.app' target='_blank'>
+            <button class="btn btn-lg btn-outline-secondary">
               Live
             </button>
+            </a>
         </div>
       </div>
       <div className='container'>
         <div className="projectDescrip">
         <h4 className="projectTitle">React Calculator:</h4>
             <p>
-              This app is an online PopUp shop where you can add any sneakers
-              you would like to sell but also not limited to those, as you can
-              add whatever items you would like to sell. <br />
+              This web app is a basic clone of an iphone calculator using React.js<br />
               This App was created using React, Express, SQL, Bootstrap.
-              <br /> Created by a team of 4 developers.
+              <br />
             </p>
-            <button href='https://pop-up-shop.netlify.app' target='_blank'>
+            <a href='https://anas-calculator-project.netlify.app' target='_blank'>
+            <button class="btn btn-lg btn-outline-secondary">
               Live
             </button>
+            </a>
         </div>
         <img src={reactCalc} alt='Example' className='image' />
       </div>

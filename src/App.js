@@ -6,7 +6,7 @@ import AboutMe from './Components/AboutMe'
 import Projects from './Components/Projects'
 // import './Stylings/App.css'
 import ContactMe from './Components/Contact';
-import Resume from './Components/Resume';
+import Skills from './Components/Skills';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Home />
       <AboutMe />
       <Projects />
-      <Resume />
+      <Skills />
       <ContactMe />
       {/* <Switch> */}
         {/* <Route path={'/AboutMe'} component={AboutMe} />

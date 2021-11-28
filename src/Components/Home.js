@@ -10,6 +10,9 @@ const Home = () => {
             <div className="info">
             <h1>ANAS NAHIL</h1>
             <p>A Fullstack Software Engineer passionate about making Apps that help people and building games. </p>
+            <a href="https://docs.google.com/document/d/1OkkZ5Rn8xxP_xB-xzZlfjx2Umun5xLAiJQxFd0yDIpo/edit?usp=sharing" target="_blank"><button class="btn btn-lg btn-outline-secondary">Resume</button></a>
+            <a href="https://www.linkedin.com/in/itsanasna/" target="_blank"><button class="btn btn-lg btn-outline-secondary">LinkedIn</button></a>
+            <a href="https://github.com/itsanasna/" target="_blank"><button class="btn btn-lg btn-outline-secondary">Github</button></a>
             </div>
         </div>
     )

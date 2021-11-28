@@ -1,0 +1,19 @@
+form {
+    color: antiquewhite ;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  input, textarea {
+      width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.successMassage {
+    text-align: center;
+    color: violet;
+    font-size: 50px;
+}

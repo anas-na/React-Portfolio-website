@@ -69,16 +69,16 @@ const NavBar = () => {
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='/Resume'>
+                <MDBNavbarLink href='/skills'>
                   <Link
                     activeClass='active'
-                    to='resume'
+                    to='skills'
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500}
                   >
-                    Resume
+                    Skills
                   </Link>
                 </MDBNavbarLink>
               </MDBNavbarItem>
@@ -86,7 +86,7 @@ const NavBar = () => {
                 <MDBNavbarLink href='/contact'>
                   <Link
                     activeClass='active'
-                    to='contactMe'
+                    to='contact'
                     spy={true}
                     smooth={true}
                     offset={-70}
