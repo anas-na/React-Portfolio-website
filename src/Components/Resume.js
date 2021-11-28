@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Document, Page } from 'react-pdf';
+import AnasNahilResume from "../resume/AnasNahilResume.pdf"
 
 const Resume = () => {
+    
     return (
         <div id="resume">
-            <h1>resume</h1>
+             <Document file={AnasNahilResume}>
+      <Page pageNumber={1} />
+    </Document>
         </div>
     )
 }

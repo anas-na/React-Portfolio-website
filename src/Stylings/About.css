@@ -1,0 +1,17 @@
+#aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bio {
+    text-align: center;
+    max-width: 500px;
+    font-size: 19px;
+    color: white;
+}
+
+.selfImage {
+    border-radius: 50%;
+}
+

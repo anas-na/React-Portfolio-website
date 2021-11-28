@@ -6,6 +6,17 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//  Container = React.createClass({
+//   render: function(){
+//       return <div>
+//           <Home/>
+//           <AboutMe/>
+//           <Projects/>
+//           <Resume/>
+//           <ContactMe />
+//       </div>;
+//   }
+// });
 
 ReactDOM.render(
   <React.StrictMode>

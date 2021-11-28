@@ -4,33 +4,27 @@ import Home from './Components/Home'
 import NavBar from './Components/NavBar'
 import AboutMe from './Components/AboutMe'
 import Projects from './Components/Projects'
-import './App.css'
+// import './Stylings/App.css'
 import ContactMe from './Components/Contact';
 import Resume from './Components/Resume';
 
 
-// Container = React.createClass({
-//   render: function(){
-//       return <div>
-//           <Home/>
-//           <AboutMe/>
-//           <Projects/>
-//           <Resume/>
-//           <ContactMe />
-//       </div>;
-//   }
-// });
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Switch>
-        <Route exact path={'/'} component={Home} />
-        <Route exact path={'/AboutMe'} component={AboutMe} />
-        <Route exact path={'/Projects'} component={Projects} />
-        <Route exact path={'/Resume'} component={Resume} />
-        <Route exact path={'/Contact'} component={ContactMe} />
-      </Switch>
+      <Home />
+      <AboutMe />
+      <Projects />
+      <Resume />
+      <ContactMe />
+      {/* <Switch> */}
+        {/* <Route path={'/AboutMe'} component={AboutMe} />
+        <Route path={'/Projects'} component={Projects} />
+        <Route path={'/Resume'} component={Resume} />
+        <Route path={'/Contact'} component={ContactMe} />
+        <Route path={'/'} component={Home} /> */}
+      {/* </Switch> */}
     
     </div>
   );

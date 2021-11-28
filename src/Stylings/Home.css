@@ -1,0 +1,26 @@
+#home {
+    margin-top: 70px;
+ display: flex;
+ flex-direction: row-reverse;
+ align-items: center;
+
+}
+
+.info {
+    text-align: center;
+    font-size: 19px; 
+    color: white;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+h1, h4{
+    color: antiquewhite;
+    border-bottom: 4px solid;
+    display: inline-block;
+}
+.logo {
+    border-radius: 30%;
+}

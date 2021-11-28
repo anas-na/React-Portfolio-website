@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../Images/logo.png";
+import selfImage from "../Images/selfImage.jpg";
+import "../Stylings/About.css"
 import {
   MDBCard,
   MDBCardBody,
@@ -16,18 +17,10 @@ import {
 const AboutMe = () => {
   return (
     <div id="aboutMe">
-      <MDBCard alignment='center'
-            className='h-100 border border-dark'
-            style={{ backgroundColor: "rgb(66, 66, 66)", width: '100%' }}>
-        <MDBRow className='g-0'>
-          <MDBCol md='4'>
-            <MDBCardImage src={logo} alt='selfpic' id='selfie' fluid />
-          </MDBCol>
-          <MDBCol md='5'>
-            <MDBCardBody className='d-flex flex-column justify-content-center'>
-              <MDBCardTitle>About:</MDBCardTitle>
-              <MDBCardText className="text-center">
-                Born and raised in Morocco, I moved to NYC in 2010 and been
+      <img className="selfImage"src={selfImage} height="600px" width="600px"/>
+      <div className="bio">
+        <h1>Bio:</h1>
+        <p>Born and raised in Morocco, I moved to NYC in 2010 and been
                 living in the big apple ever since. with a passion for music, I
                 started learning about coding in middle school with having my
                 own blog where i posted all music news that interest me. but now
@@ -37,12 +30,8 @@ const AboutMe = () => {
                 that I excel at solving technical challenges and debugging
                 individual lines of code. Ultimately, I hope to use my technical
                 skills to design and program my own video games, and to build
-                platforms that enable community building and social impact.
-              </MDBCardText>
-            </MDBCardBody>
-          </MDBCol>
-        </MDBRow>
-      </MDBCard>
+                platforms that enable community building and social impact.</p>
+      </div>
     </div>
   );
 };
