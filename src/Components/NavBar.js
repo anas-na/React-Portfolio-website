@@ -18,7 +18,7 @@ const NavBar = () => {
     <div>
       <MDBNavbar fixed="top" expand='lg' dark bgColor='dark'>
         <MDBContainer fluid>
-          <MDBNavbarBrand href='/home'>
+          <MDBNavbarBrand href='/'>
             <img src={Logo} height='40' width='40' alt='' loading='lazy' />
             <Link
               activeClass='active'
