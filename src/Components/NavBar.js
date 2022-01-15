@@ -41,7 +41,7 @@ const NavBar = () => {
           <MDBCollapse navbar id='navbarColor02'>
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
               <MDBNavbarItem className='active'>
-                <MDBNavbarLink aria-current='page' href='/aboutMe'>
+                <MDBNavbarLink aria-current='page' href='/'>
                   <Link
                     activeClass='active'
                     to='aboutMe'
@@ -55,7 +55,7 @@ const NavBar = () => {
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='/Projects'>
+                <MDBNavbarLink href='/'>
                   <Link
                     activeClass='active'
                     to='projects'
@@ -69,7 +69,7 @@ const NavBar = () => {
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='/skills'>
+                <MDBNavbarLink href='/'>
                   <Link
                     activeClass='active'
                     to='skills'
@@ -83,7 +83,7 @@ const NavBar = () => {
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='/contact'>
+                <MDBNavbarLink href='/'>
                   <Link
                     activeClass='active'
                     to='contact'
