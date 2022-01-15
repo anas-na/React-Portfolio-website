@@ -3,9 +3,9 @@ import '../Stylings/skills.css'
 
 const skills = () => {
     return (
-        <div className="skillsPage">
+        <div className="skillsPage" id="skills">
             <h1>Skills:</h1>
-        <div className="skills" id="skills">
+        <div className="skills" >
             <div>  
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="100px"/>
           </div>

@@ -7,25 +7,26 @@ import Projects from './Components/Projects'
 // import './Stylings/App.css'
 import ContactMe from './Components/Contact';
 import Skills from './Components/Skills';
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      {/* <Switch> */}
+      {/* <Route exact path ='/home' component={Home} />
+      <Route exact path ='/aboutMe' component={AboutMe}/>
+      <Route exact path ='/projects' component={Projects}/>
+      <Route exact path ='/skillsPage' component={Skills}/>
+      <Route exact path ='/contact' component={ContactMe}/> */}
       <Home />
-      <AboutMe />
+      <AboutMe /> */}
       <Projects />
       <Skills />
-      <ContactMe />
-      {/* <Switch> */}
-        {/* <Route path={'/AboutMe'} component={AboutMe} />
-        <Route path={'/Projects'} component={Projects} />
-        <Route path={'/Resume'} component={Resume} />
-        <Route path={'/Contact'} component={ContactMe} />
-        <Route path={'/'} component={Home} /> */}
-      {/* </Switch> */}
-    
+      <ContactMe /> 
+       {/* </Switch>    */}
     </div>
   );
 }

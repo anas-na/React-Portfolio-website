@@ -1,19 +1,6 @@
 import React from "react";
 import selfImage from "../Images/selfImage.jpg";
 import "../Stylings/About.css"
-import {
-  MDBCard,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardImage,
-  MDBBtn,
-  MDBRipple,
-  MDBRow,
-  MDBCol,
-  MDBCardFooter,
-  MDBBtnGroup,
-} from "mdb-react-ui-kit";
 const AboutMe = () => {
   return (
     <div id="aboutMe">

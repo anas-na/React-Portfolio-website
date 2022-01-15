@@ -1,105 +1,45 @@
-import React from "react";
-import { Link } from "react-scroll";
-import {
-  MDBNavbar,
-  MDBContainer,
-  MDBIcon,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBNavbarToggler,
-  MDBNavbarBrand,
-  MDBCollapse,
-} from "mdb-react-ui-kit";
+import React, { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+import { ReactComponent as CloseMenu } from "../assets/x.svg";
+import { ReactComponent as MenuIcon } from "../assets/menu.svg";
 import Logo from "../Images/logo.png";
+import "../Stylings/NavBar.css";
 
 const NavBar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
   return (
-    <div>
-      <MDBNavbar fixed="top" expand='lg' dark bgColor='dark'>
-        <MDBContainer fluid>
-          <MDBNavbarBrand href='/'>
+    <div className='NavBar'>
+      <div className='logo-nav'>
+        <div className='logo-container'>
+          <a className='atag' href='/'>
             <img src={Logo} height='40' width='40' alt='' loading='lazy' />
-            <Link
-              activeClass='active'
-              to='home'
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            ></Link>
-          </MDBNavbarBrand>
-          <MDBNavbarToggler
-            type='button'
-            data-target='#navbarColor02'
-            aria-controls='navbarColor02'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-          >
-            <MDBIcon icon='bars' fas />
-          </MDBNavbarToggler>
-          <MDBCollapse navbar id='navbarColor02'>
-            <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
-              <MDBNavbarItem className='active'>
-                <MDBNavbarLink aria-current='page' href='/'>
-                  <Link
-                    activeClass='active'
-                    to='aboutMe'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    About
-                  </Link>
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='/'>
-                  <Link
-                    activeClass='active'
-                    to='projects'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    Projects
-                  </Link>
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='/'>
-                  <Link
-                    activeClass='active'
-                    to='skills'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    Skills
-                  </Link>
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-              <MDBNavbarItem>
-                <MDBNavbarLink href='/'>
-                  <Link
-                    activeClass='active'
-                    to='contact'
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    contact
-                  </Link>
-                </MDBNavbarLink>
-              </MDBNavbarItem>
-            </MDBNavbarNav>
-          </MDBCollapse>
-        </MDBContainer>
-      </MDBNavbar>
+          </a>
+        </div>
+        <ul className={click ? "nav-options active" : "nav-options"}>
+          <li className='option' onClick={closeMobileMenu}>
+            <a className='atag' href="#aboutMe" >ABOUT</a>
+          </li>
+          <li className='option' onClick={closeMobileMenu}>
+            <a className='atag' href='#projects'>Projects</a>
+          </li>
+          <li className='option' onClick={closeMobileMenu}>
+            <a className='atag' href='#skills'>Skills</a>
+          </li>
+          <li className='option' onClick={closeMobileMenu}>
+            <a className='atag' href='#contact'>Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div className='mobile-menu' onClick={handleClick}>
+        {click ? (
+          <CloseMenu className='menu-icon' />
+        ) : (
+          <MenuIcon className='menu-icon' />
+        )}
+      </div>
     </div>
   );
 };
