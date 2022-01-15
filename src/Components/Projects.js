@@ -5,10 +5,13 @@ import ProjectCarousel from "./Carousel_projects";
 // import budgettingApp from "../Images/budgettingApp.gif";
 // import EcoRent from "../Images/EcoRent.gif";
 import "../Stylings/Projects.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Projects = () => {
   return (
-    <div id='projects'>
+    <div id='projects' data-aos="zoom-in">
       <ProjectCarousel />
     </div>
 //     <div id='projects'>
