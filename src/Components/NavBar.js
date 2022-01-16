@@ -22,13 +22,13 @@ const NavBar = () => {
             <a className='atag' href="#aboutMe" >ABOUT</a>
           </li>
           <li className='option' onClick={closeMobileMenu}>
-            <a className='atag' href='#projects'>Projects</a>
+            <a className='atag' href='#projects'>PROJECTS</a>
           </li>
           <li className='option' onClick={closeMobileMenu}>
-            <a className='atag' href='#skills'>Skills</a>
+            <a className='atag' href='#skills'>SKILLS</a>
           </li>
           <li className='option' onClick={closeMobileMenu}>
-            <a className='atag' href='#contact'>Contact</a>
+            <a className='atag' href='#contact'>CONTACT</a>
           </li>
         </ul>
       </div>

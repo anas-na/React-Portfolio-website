@@ -1,9 +1,15 @@
+
+@import url(//db.onlinewebfonts.com/c/ea28fd0959fcd29684aaf26e9c0b367d?family=Manus);
+
 #home {
-    margin-top: 77px;
+margin-top: 77px;
  display: flex;
  flex-direction: row-reverse;
  align-items: center;
 
+}
+.opener {
+    font-family: Esteban, Georgia, 'Times New Roman', serif;
 }
 
 .info {
@@ -17,10 +23,103 @@
 }
 
 h1, h4{
-    color: antiquewhite;
-    border-bottom: 4px solid;
+    font-family: 'Manus Smooth_TRIAL', sans-serif;
+    color: #BF1E1E;
+    /* border-bottom: 4px solid; */
     display: inline-block;
 }
 .logo {
     border-radius: 30%;
 }
+
+.icons {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    gap: 40%;
+    margin-right: 130px;
+}
+
+.glow-on-hover {
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff0000, #ff7300, #fffb00, #ff0000, #fffb00, #ff7300, #ff0000, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #202020
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #D89A00;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.homeIcons {
+    margin-right: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* @media screen and (max-device-width: 480px)  {
+    h1, h4 {
+        font-size: 5px;
+        background-color: white;
+    } 
+    #home {
+         display: flex;
+         flex-direction: column;
+        }
+
+    
+    .logo {
+        width: 100%;
+        height: 100%;
+        background-color: blueviolet;
+    }
+} */
