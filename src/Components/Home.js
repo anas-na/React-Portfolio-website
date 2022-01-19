@@ -18,7 +18,7 @@ const Home = () => {
     
     return (
         <div id="home" >
-            <img src={logo} height="570px" width="650px" className="logo homeLogo" data-aos="fade-left"/>
+            <img src={logo} height="570px" width="650px" className=" homeLogo" data-aos="fade-left"/>
             <div className="info" data-aos="fade-right">
             <h1>ANAS NAHIL</h1>
             <p className='opener'>A Fullstack Software Engineer passionate about making Apps that help people and building games. </p>

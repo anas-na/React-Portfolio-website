@@ -17,3 +17,19 @@
     border-radius: 50%;
 }
 
+@media screen and (max-device-width: 480px)  {
+    #aboutMe {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+
+    }
+
+    .selfImage {
+        width: 80%;
+        height: 60%;
+    }
+
+}

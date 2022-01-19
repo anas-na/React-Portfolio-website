@@ -1,6 +1,7 @@
 .App {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   background-color: black;
+  overflow: hidden
   /* text-align: center; */
 }
 
